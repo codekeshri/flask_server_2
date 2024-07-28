@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 
+print('my name is anthony')
 app = Flask(__name__)
 
 @app.route('/')
@@ -10,4 +11,4 @@ def home():
 def user(name):
     return render_template('user.html', name=name)
 
-app.run()
+app.run(port=7000)
